@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 import "./App.css";
 
-import Projects from "./components/Projects/Projects";
+import Projects from "./components/projects/Projects";
+import Footer from "./components/footer/Footer";
 const App = () => {
   return (
     <Fragment>
@@ -9,6 +10,7 @@ const App = () => {
         <div className="main-container">
           <Projects />
         </div>
+        <Footer />
       </section>
     </Fragment>
   );

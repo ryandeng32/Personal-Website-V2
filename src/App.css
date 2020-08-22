@@ -21,8 +21,7 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: "Arvo", serif;
-  font-family: "Cormorant", serif;
+  font-family: "Dosis", sans-serif;
 }
 
 body * {
@@ -58,7 +57,7 @@ h6 {
 }
 
 .s1 {
-  background-color: var(--mainColor);
+  background-color: var(--secondaryColor);
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
 }
@@ -73,6 +72,18 @@ h6 {
   }
 }
 
+.brief-head {
+  margin-top: 50px;
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+.brief-text {
+  font-size: 22px;
+  text-align: center;
+  padding-bottom: 40px;
+}
 .projects {
   margin-top: 2rem;
   display: grid;
@@ -141,7 +152,6 @@ h6 {
 }
 
 .project-description {
-  font-weight: 700;
   color: #000000;
   font-size: 18px;
 }
@@ -159,4 +169,26 @@ h6 {
 .project:hover .project-title {
   font-size: 35px;
   transform: translate(-50%, -250%);
+}
+
+.bottom-container {
+  background-color: var(--mainColor);
+  margin-top: 70px;
+  padding: 20px 50px;
+  text-align: center;
+}
+.footer-link {
+  display: inline-block;
+  color: black;
+  font-size: 2rem;
+  transition: 0s;
+}
+.footer-link:hover {
+  color: #42a7f5;
+}
+.copyright {
+  margin-top: 30px;
+}
+.footer-link {
+  margin: auto 30px;
 }
