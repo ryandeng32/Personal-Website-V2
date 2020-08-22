@@ -53,7 +53,7 @@ h6 {
 }
 
 .s1 {
-  background-color: var(--secondaryColor);
+  background-color: var(--mainColor);
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
 }
@@ -156,7 +156,6 @@ h6 {
 }
 .project-title {
   transition: 0.3s;
-
   position: absolute;
   z-index: 3;
   font-size: 25px;
@@ -192,4 +191,13 @@ h6 {
 }
 .footer-link {
   margin: auto 30px;
+}
+
+.intro {
+  background-color: var(--secondaryColor);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

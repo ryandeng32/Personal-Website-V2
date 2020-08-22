@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-
 const Project = ({ project }) => {
   const { icon, name, description, website, image } = project;
   return (
