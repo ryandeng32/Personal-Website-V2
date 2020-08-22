@@ -110,7 +110,8 @@ h6 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.project:hover .icon {
+.project:hover .icon,
+.project:active .icon {
   font-size: 45px;
   top: 15%;
   transform: translate(-50%, -15%);
@@ -127,6 +128,7 @@ h6 {
   object-fit: cover;
   scale: 1.5;
 }
+.project:active .thumbnail,
 .project:hover .thumbnail {
   height: 180px;
   border-radius: 15px 15px 0 0;
@@ -146,6 +148,7 @@ h6 {
   padding: 10px;
   transition: 0.3s ease-in;
 }
+.project:active .project-preview,
 .project:hover .project-preview {
   opacity: 1;
 }
@@ -166,6 +169,7 @@ h6 {
   text-align: center;
   transform: translate(-50%, -7%);
 }
+.project:active .project-title,
 .project:hover .project-title {
   font-size: 35px;
   transform: translate(-50%, -250%);

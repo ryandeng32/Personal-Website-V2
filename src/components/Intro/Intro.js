@@ -4,7 +4,7 @@ const Intro = () => {
   return (
     <section className="intro">
       <h1>Ryan Deng</h1>
-      <h2>Hi! Let me introduce myself.</h2>
+      <h2>Hi!.</h2>
     </section>
   );
 };
