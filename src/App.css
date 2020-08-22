@@ -24,10 +24,6 @@ body {
   font-family: "Dosis", sans-serif;
 }
 
-body * {
-  transition: 0.3s;
-}
-
 a {
   text-decoration: none;
   color: #17a2b8;
@@ -105,6 +101,7 @@ h6 {
   box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
 }
 .icon {
+  transition: 0.3s;
   position: absolute;
   z-index: 3;
   font-size: 80px;
@@ -119,6 +116,7 @@ h6 {
   transform: translate(-50%, -15%);
 }
 .thumbnail {
+  transition: 0.3s;
   filter: blur(1px);
   position: relative;
   z-index: 2;
@@ -136,14 +134,15 @@ h6 {
 }
 
 .project-preview {
-  opacity: 0;
+  transition: 0.3s;
+  opacity: 0.1;
   position: absolute;
   border-top: 2px solid var(--borderColor);
   left: 0px;
   right: 0px;
   bottom: 0px;
   border-radius: 0 0 15px 15px;
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(243, 243, 243);
   padding: 10px;
   transition: 0.3s ease-in;
 }
@@ -156,6 +155,8 @@ h6 {
   font-size: 18px;
 }
 .project-title {
+  transition: 0.3s;
+
   position: absolute;
   z-index: 3;
   font-size: 25px;

@@ -6,8 +6,8 @@ const Projects = () => {
   return (
     <Fragment>
       <div>
-        <h2 class="brief-head">My Recent Projects</h2>
-        <p class="brief-text">
+        <h2 className="brief-head">My Recent Projects</h2>
+        <p className="brief-text">
           Here are some of my projects. Wanna see more? Here's my{" "}
           <a target="_blank" href="resume_ryan.pdf">
             resume
