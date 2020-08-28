@@ -3,7 +3,7 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: "Dosis", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -11,116 +11,6 @@ a {
   color: #17a2b8;
 }
 
-ul {
-  list-style: none;
-}
-
-.s1 {
-  padding: 1rem 0;
-  background: rgba(218, 218, 218, 0.589);
-}
-.main-container {
-  width: 1200px;
-  margin: 0 auto;
-}
-@media screen and (max-width: 1200px) {
-  .main-container {
-    width: 95%;
-  }
-}
-
-.brief-head {
-  margin-top: 50px;
-  font-size: 32px;
-  text-align: center;
-  padding-bottom: 0px;
-}
-
-.brief-text {
-  font-size: 22px;
-  text-align: center;
-  padding-bottom: 40px;
-}
-.projects {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 360px);
-  gap: 20px;
-  grid-template-rows: 300px;
-  justify-content: center;
-  padding-bottom: 50px;
-}
 .container {
-  height: 300px;
-}
-.project {
-  border: 2px solid grey;
-  position: relative;
-  border-radius: 15px;
-}
-.icon {
-  transition: 0.2s ease-in;
-  position: absolute;
-  z-index: 3;
-  font-size: 80px;
-  color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.project:hover .icon,
-.project:active .icon {
-  font-size: 45px;
-  top: 15%;
-  transform: translate(-50%, -15%);
-}
-.thumbnail {
-  transition: 0.2s ease-in;
-  filter: blur(1px);
-  position: relative;
-  z-index: 2;
-  border-radius: 15px;
-  display: block;
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  scale: 1.5;
-}
-.project:active .thumbnail,
-.project:hover .thumbnail {
-  height: 180px;
-  border-radius: 15px 15px 0 0;
-  transform: translateY(0);
-}
-
-.project-preview {
-  position: absolute;
-  border-top: 2px solid var(--borderColor);
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  border-radius: 0 0 15px 15px;
-  background-color: rgb(243, 243, 243);
-  padding: 10px;
-}
-
-.project-description {
-  color: #000000;
-  font-size: 18px;
-}
-.project-title {
-  transition: 0.2s ease-in;
-  position: absolute;
-  z-index: 3;
-  font-size: 35px;
-  color: white;
-  left: 50%;
-  bottom: 7%;
-  width: 100%;
-  text-align: center;
-  transform: translate(-50%, -7%);
-}
-.project:active .project-title,
-.project:hover .project-title {
-  transform: translate(-50%, -250%);
+  padding: 0 1.5rem;
 }

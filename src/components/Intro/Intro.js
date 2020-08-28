@@ -9,17 +9,18 @@ const Intro = ({ handleSetPage, num_projects }) => {
     skill_on: false,
     about_on: false,
   };
-  const [on, setOn] = useState(reset);
+  const [on, setOn] = useState({ ...reset, about_on: true });
   const { project_on, work_on, skill_on, about_on } = on;
-
+  const height_style = { height: window.screen.width * 0.3 };
   return (
-    <section className="intro">
+    <section style={{ height: window.screen.width * 0.9 }} className="intro">
       <img className="profile_img" src={profile_img} alt="" />
       <div className="hr-line"></div>
       <div className="vt-line"></div>
       <div
+        style={height_style}
         className={
-          about_on ? "intro-btn btn-about about_on" : "intro-btn btn-about"
+          about_on ? "intro-btn btn-about about_on on" : "intro-btn btn-about"
         }
         name="About Me"
         onClick={(e) => {
@@ -33,9 +34,10 @@ const Intro = ({ handleSetPage, num_projects }) => {
         </div>
       </div>
       <div
+        style={height_style}
         className={
           project_on
-            ? "intro-btn btn-project project_on"
+            ? "intro-btn btn-project project_on on"
             : "intro-btn btn-project"
         }
         name="Projects"
@@ -51,8 +53,9 @@ const Intro = ({ handleSetPage, num_projects }) => {
       </div>
 
       <div
+        style={height_style}
         className={
-          skill_on ? "intro-btn btn-skill skill_on" : "intro-btn btn-skill"
+          skill_on ? "intro-btn btn-skill skill_on on" : "intro-btn btn-skill"
         }
         name="Skills"
         onClick={(e) => {
@@ -67,8 +70,9 @@ const Intro = ({ handleSetPage, num_projects }) => {
       </div>
 
       <div
+        style={height_style}
         className={
-          work_on ? "intro-btn btn-work work_on" : "intro-btn btn-work"
+          work_on ? "intro-btn btn-work work_on on" : "intro-btn btn-work"
         }
         name="Work"
         onClick={(e) => {

@@ -7,7 +7,7 @@ import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Work from "./components/work/Work";
 const App = () => {
-  const [page, setPage] = useState("");
+  const [page, setPage] = useState("About Me");
   const handleSetPage = (e) => {
     setPage(e.target.getAttribute("name"));
   };
@@ -34,7 +34,7 @@ const App = () => {
         handleSetPage={handleSetPage}
         num_projects={projects_data.length}
       />
-      {currentPage}
+      <div className="container"> {currentPage}</div>
     </Fragment>
   );
 };

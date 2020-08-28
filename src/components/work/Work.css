@@ -1,0 +1,9 @@
+.work-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: rgba(7, 64, 222, 1);
+}
+
+.work-text {
+  padding: 1rem;
+}

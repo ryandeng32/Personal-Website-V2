@@ -1,0 +1,9 @@
+.skills-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: rgba(233, 51, 82, 1);
+}
+
+.skills-text {
+  padding: 1rem;
+}

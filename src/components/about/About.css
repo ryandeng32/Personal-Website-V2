@@ -1,0 +1,9 @@
+.about-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: rgba(98, 186, 71, 1);
+}
+
+.about-text {
+  padding: 1rem;
+}
