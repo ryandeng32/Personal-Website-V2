@@ -5,7 +5,25 @@ import Pong from "../img/project_img/pong.png";
 import Platformer from "../img/project_img/platformer.png";
 import Cube from "../img/project_img/cube.png";
 import Money from "../img/project_img/money.png";
+import IdeaConnect from "../img/project_img/ideaconnect.png";
+import Challengers from "../img/project_img/challengers.png";
 export const projects_data = [
+  {
+    icon: "palette",
+    name: "Challengers",
+    description:
+      "A fullstack web app made with the MERN stack to facilitate employee engagement in remote environment",
+    website: "https://github.com/ryandeng32/Challengers",
+    image: Challengers,
+  },
+  {
+    icon: "lightbulb",
+    name: "IdeaConnect",
+    description:
+      "Real-time Chatrooms to connect ideas built with MERN stack and socket.io",
+    website: "https://github.com/ryandeng32/IdeaConnect",
+    image: IdeaConnect,
+  },
   {
     icon: "clipboard",
     name: "ProjectBoard",
