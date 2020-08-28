@@ -8,13 +8,14 @@
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, 230px);
-  gap: 20px;
+  gap: 1.8rem;
   grid-template-rows: 230px;
   justify-content: center;
   padding-bottom: 50px;
 }
 
 .project {
+  border: 2px solid rgb(128, 128, 128);
   position: relative;
   border-radius: 15px;
 }
