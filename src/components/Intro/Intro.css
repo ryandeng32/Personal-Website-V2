@@ -27,6 +27,11 @@
   transition: 0.2s;
 }
 
+@media only screen and (min-width: 400px) {
+  .profile_img {
+    width: 95px;
+  }
+}
 .btn-project {
   border-radius: 100% 0 0 0;
   color: rgba(95, 95, 95, 0.61);
@@ -66,7 +71,6 @@
 .hr-line {
   position: absolute;
   border-bottom: 1px solid rgba(119, 119, 119, 0.192);
-  width: 75%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

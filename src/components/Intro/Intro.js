@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Intro.css";
 import profile_img from "../../img/profile_basketball.JPG";
 
 const Intro = ({ handleSetPage, num_projects }) => {
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+  const { height, width } = dimensions;
   let reset = {
     project_on: false,
     work_on: false,
@@ -11,11 +16,34 @@ const Intro = ({ handleSetPage, num_projects }) => {
   };
   const [on, setOn] = useState({ ...reset, about_on: true });
   const { project_on, work_on, skill_on, about_on } = on;
-  const height_style = { height: window.screen.width * 0.3 };
+  useEffect(() => {
+    const handleResize = () => {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+  const widthBorder = width > 500;
+  const num = 150 + width * 0.07;
+  const screen_height = 500 + width * 0.08;
+  const height_style = widthBorder
+    ? { width: `${num}px`, height: `${num}px` }
+    : { width: width * 0.3, height: width * 0.3 };
+
   return (
-    <section style={{ height: window.screen.width * 0.9 }} className="intro">
+    <section
+      style={
+        widthBorder ? { height: `${screen_height}px` } : { height: width * 0.9 }
+      }
+      className="intro"
+    >
       <img className="profile_img" src={profile_img} alt="" />
-      <div className="hr-line"></div>
+      <div style={{ width: height * 0.7 }} className="hr-line"></div>
       <div className="vt-line"></div>
       <div
         style={height_style}

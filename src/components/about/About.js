@@ -9,7 +9,8 @@ const About = () => {
         <p className="about-text-lead">Welcome to my website</p>
         <p>
           I am a sophomore studying <strong>Software Engineering</strong> at the
-          <strong> University of Waterloo.</strong> <a>Check out My Resume</a>
+          <strong> University of Waterloo.</strong>{" "}
+          <a href="#!">Check out My Resume</a>
         </p>
         <p>
           <strong>Learning is my greatest passion</strong>, I consider myself a
