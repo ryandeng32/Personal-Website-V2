@@ -5,5 +5,20 @@
 }
 
 .about-text {
-  padding: 1rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  line-height: 1.4rem;
+}
+
+.about-text-title {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.about-text p {
+  font-size: 0.8rem;
+}
+
+.about-text .about-text-lead {
+  font-size: 1rem;
+  text-align: center;
 }

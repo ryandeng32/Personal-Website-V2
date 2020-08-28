@@ -11,6 +11,22 @@ a {
   color: #17a2b8;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   padding: 0 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+hr {
+  margin-bottom: 1.5rem;
+  opacity: 0.7;
 }

@@ -5,26 +5,26 @@ const About = () => {
     <section className="about">
       <div className="about-title">About me</div>
       <div className="about-text">
-        <p>Learning is my greatest passion. </p>
+        <h1 className="about-text-title">Hi! I'm Ryan Deng</h1>
+        <p className="about-text-lead">Welcome to my website</p>
         <p>
-          Web Development I taught myself web programming and built this website
-          as a project along with other projects such as a chrome extension.
+          I am a sophomore studying <strong>Software Engineering</strong> at the
+          <strong> University of Waterloo.</strong>
         </p>
         <p>
-          Game Development I built 3D Game using VPython and a topdown style
-          shooter game with Pygame. I also built classic games such as Pong
-          using the Arduino.
+          <strong>Learning is my greatest passion</strong>, I consider myself a
+          self starter and I'm naturally inquisitive, I was drawn to coding when
+          I first started 3 years ago, and I'm still in{" "}
+          <i
+            style={{ color: "rgba(234, 53, 117, 1)" }}
+            className="fas fa-heart"
+          ></i>{" "}
+          with it ever since.
         </p>
-        <p>
-          Scripting I can effectively apply Python in everyday life. For
-          example, I built a stock market report web crawler to fetch useful
-          information.
+        <p className="text-center">
+          I believe <strong>coding is a superpower</strong>
         </p>
-        <p>
-          AI programming I am also excited about exploring the AI field and
-          decided take on the challenge of learning deep learning in 2020 on
-          Coursera through the deep learning specialization.
-        </p>
+        <hr />
       </div>
     </section>
   );
