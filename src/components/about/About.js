@@ -1,12 +1,21 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./About.css";
-const About = () => {
+const About = ({ displayIntro }) => {
   return (
     <section className="about">
       <div className="about-title">About me</div>
       <div className="about-text">
-        <h1 className="about-text-title">Hi! I'm Ryan Deng</h1>
-        <p className="about-text-lead">Welcome to my website</p>
+        {displayIntro ? (
+          <Fragment>
+            <div className="about-text-title">
+              Hi! I'm <strong>Ryan Deng</strong>
+            </div>
+            <div className="about-text-lead">
+              Welcome, I'm glad you are here.
+            </div>
+          </Fragment>
+        ) : null}
+
         <p>
           I am a sophomore studying <strong>Software Engineering</strong> at the
           <strong> University of Waterloo.</strong>{" "}

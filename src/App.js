@@ -8,7 +8,12 @@ import Skills from "./components/skills/Skills";
 import Work from "./components/work/Work";
 import Footer from "./components/footer/Footer";
 const App = () => {
+  // whether or not to display intro in about
+  const [aboutIntro, setAboutIntro] = useState(true);
   const [page, setPage] = useState("About");
+  const handleAbout = (bool) => {
+    setAboutIntro(bool);
+  };
   const handleSetPage = (e) => {
     setPage(e.target.getAttribute("name"));
     window.scrollTo({
@@ -22,7 +27,7 @@ const App = () => {
       currentPage = <Projects projects_data={projects_data} />;
       break;
     case "About":
-      currentPage = <About />;
+      currentPage = <About displayIntro={aboutIntro} />;
       break;
     case "Skills":
       currentPage = <Skills />;
@@ -37,6 +42,7 @@ const App = () => {
     <Fragment>
       <Intro
         handleSetPage={handleSetPage}
+        handleAbout={handleAbout}
         num_projects={projects_data.length}
       />
       <div className="container">{currentPage}</div>

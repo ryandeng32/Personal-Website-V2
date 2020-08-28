@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import "./Intro.css";
 import profile_img from "../../img/profile_basketball.JPG";
 
-const Intro = ({ handleSetPage, num_projects }) => {
+const Intro = ({ handleAbout, handleSetPage, num_projects }) => {
   let reset = {
     project_on: false,
     work_on: false,
@@ -35,6 +35,11 @@ const Intro = ({ handleSetPage, num_projects }) => {
   });
 
   const widthBorder = width > 500;
+  if (widthBorder) {
+    handleAbout(false);
+  } else {
+    handleAbout(true);
+  }
   const num = 115 + width * 0.07;
   const screen_height = 500 + width * 0.08;
   const height_style = widthBorder
@@ -133,7 +138,7 @@ const Intro = ({ handleSetPage, num_projects }) => {
           <h1>
             I'm <strong>Ryan Deng</strong>
           </h1>
-          <p>Welcome, I'm glad you are finally here.</p>
+          <p>Welcome, I'm glad you are here.</p>
         </Fragment>
       ) : null}
     </section>
