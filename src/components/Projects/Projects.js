@@ -1,8 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Project from "./Project";
-import { projects_data } from "../../data/projects";
 
-const Projects = () => {
+const Projects = ({ projects_data }) => {
   return (
     <section className="s1">
       <div className="main-container">
@@ -18,7 +17,7 @@ const Projects = () => {
 
         <div className="projects">
           {projects_data.map((project) => (
-            <Project project={project} />
+            <Project key={project.name} project={project} />
           ))}
         </div>
       </div>

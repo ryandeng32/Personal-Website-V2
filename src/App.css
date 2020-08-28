@@ -1,21 +1,3 @@
-:root {
-  --mainColor: #eaeaea;
-  --secondaryColor: #fff;
-
-  --borderColor: #a7a6a6;
-
-  --mainText: black;
-  --secondaryText: #4b5156;
-
-  --themeDotBorder: #24292e;
-
-  --previewBg: rgb(251, 249, 243, 0.8);
-  --previewShadow: #f0ead6;
-
-  --buttonColor: black;
-}
-
-html,
 body {
   padding: 0;
   margin: 0;
@@ -33,31 +15,10 @@ ul {
   list-style: none;
 }
 
-h1 {
-  font-size: 56px;
-}
-h2 {
-  font-size: 36px;
-}
-h3 {
-  font-size: 28px;
-}
-h4 {
-  font-size: 24px;
-}
-h5 {
-  font-size: 20px;
-}
-h6 {
-  font-size: 16px;
-}
-
 .s1 {
-  background-color: var(--mainColor);
-  border-bottom: 1px solid var(--borderColor);
-  overflow: auto;
+  padding: 1rem 0;
+  background: rgba(218, 218, 218, 0.589);
 }
-
 .main-container {
   width: 1200px;
   margin: 0 auto;
@@ -93,15 +54,12 @@ h6 {
   height: 300px;
 }
 .project {
-  border: 2px solid var(--borderColor);
+  border: 2px solid grey;
   position: relative;
   border-radius: 15px;
-  -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
-  box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
 }
 .icon {
-  transition: 0.3s;
+  transition: 0.2s ease-in;
   position: absolute;
   z-index: 3;
   font-size: 80px;
@@ -117,7 +75,7 @@ h6 {
   transform: translate(-50%, -15%);
 }
 .thumbnail {
-  transition: 0.3s;
+  transition: 0.2s ease-in;
   filter: blur(1px);
   position: relative;
   z-index: 2;
@@ -136,8 +94,6 @@ h6 {
 }
 
 .project-preview {
-  transition: 0.3s;
-  opacity: 0.1;
   position: absolute;
   border-top: 2px solid var(--borderColor);
   left: 0px;
@@ -146,11 +102,6 @@ h6 {
   border-radius: 0 0 15px 15px;
   background-color: rgb(243, 243, 243);
   padding: 10px;
-  transition: 0.3s ease-in;
-}
-.project:active .project-preview,
-.project:hover .project-preview {
-  opacity: 1;
 }
 
 .project-description {
@@ -158,10 +109,10 @@ h6 {
   font-size: 18px;
 }
 .project-title {
-  transition: 0.3s;
+  transition: 0.2s ease-in;
   position: absolute;
   z-index: 3;
-  font-size: 25px;
+  font-size: 35px;
   color: white;
   left: 50%;
   bottom: 7%;
@@ -171,37 +122,5 @@ h6 {
 }
 .project:active .project-title,
 .project:hover .project-title {
-  font-size: 35px;
   transform: translate(-50%, -250%);
-}
-
-.bottom-container {
-  background-color: var(--mainColor);
-  margin-top: 70px;
-  padding: 20px 50px;
-  text-align: center;
-}
-.footer-link {
-  display: inline-block;
-  color: black;
-  font-size: 2rem;
-  transition: 0s;
-}
-.footer-link:hover {
-  color: #42a7f5;
-}
-.copyright {
-  margin-top: 30px;
-}
-.footer-link {
-  margin: auto 30px;
-}
-
-.intro {
-  background-color: var(--secondaryColor);
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }

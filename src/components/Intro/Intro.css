@@ -1,0 +1,128 @@
+.intro {
+  background-color: white;
+  height: 49vh;
+  position: relative;
+}
+
+.profile_img {
+  z-index: 2;
+  width: 23%;
+  border-radius: 100%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.intro-btn {
+  width: 35%;
+  height: 35%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.123);
+  padding: 1rem;
+  font-size: 1.3rem;
+  transition: 0.2s;
+}
+
+.btn-project {
+  border-radius: 100% 0 0 0;
+  color: rgba(95, 95, 95, 0.61);
+  position: absolute;
+  top: 10%;
+  left: 12%;
+  transform: translate(-12%, -10%);
+}
+
+.btn-about {
+  border-radius: 0 100% 0 0;
+  color: rgba(95, 95, 95, 0.61);
+  position: absolute;
+  top: 10%;
+  right: 12%;
+  transform: translate(12%, -10%);
+}
+
+.btn-skill {
+  border-radius: 0 0 0 100%;
+  color: rgba(95, 95, 95, 0.61);
+  position: absolute;
+  bottom: 10%;
+  left: 12%;
+  transform: translate(-12%, 10%);
+}
+.btn-work {
+  border-radius: 0 0 100% 0;
+  color: rgba(95, 95, 95, 0.61);
+  position: absolute;
+  bottom: 10%;
+  right: 12%;
+  transform: translate(12%, 10%);
+}
+
+.intro-text {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.hr-line {
+  position: absolute;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.192);
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.vt-line {
+  position: absolute;
+  border-left: 1px solid rgba(119, 119, 119, 0.192);
+  height: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project_on {
+  background: radial-gradient(
+    circle at bottom right,
+    rgba(162, 224, 235, 1) 0%,
+    rgba(144, 192, 228, 1) 40%,
+    rgba(121, 149, 218, 1) 68%,
+    rgba(126, 154, 204, 1) 87%
+  );
+  box-shadow: -10px -10px 15px 0 rgba(126, 155, 204, 0.438);
+  color: white;
+}
+
+.about_on {
+  background: radial-gradient(
+    circle at bottom left,
+    rgba(246, 178, 232, 1) 0%,
+    rgba(152, 12, 150, 1) 89%
+  );
+  box-shadow: 10px -10px 15px 0 rgba(152, 12, 150, 0.247);
+  color: white;
+}
+
+.skill_on {
+  background: radial-gradient(
+    circle at top right,
+    rgba(246, 178, 203, 1) 0%,
+    rgba(152, 12, 68, 1) 89%
+  );
+  box-shadow: -10px 10px 15px 0 rgba(152, 12, 68, 0.308);
+  color: white;
+}
+
+.work_on {
+  background: radial-gradient(
+    circle at top left,
+    rgba(190, 255, 224, 1) 0%,
+    rgba(12, 152, 84, 1) 89%
+  );
+  box-shadow: 10px 10px 15px 0 rgba(12, 152, 84, 0.315);
+  color: white;
+}
