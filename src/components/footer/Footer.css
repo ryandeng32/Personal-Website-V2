@@ -13,8 +13,7 @@
 .footer-links {
   display: flex;
   font-size: 2rem;
-  justify-content: center;
-  gap: 10%;
+  justify-content: space-around;
 }
 
 .footer-links a {

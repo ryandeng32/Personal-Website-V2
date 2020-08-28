@@ -56,7 +56,12 @@ const About = () => {
             I'm a<strong> Speed Cuber</strong>{" "}
             <i className="ml-1 fas fa-cube"></i>
           </div>
-
+          <div>
+            {" "}
+            I love music and
+            <strong> Playing Guitar</strong>{" "}
+            <i className="ml-1 fas fa-guitar"></i>
+          </div>
           <div>
             {" "}
             I like to do
@@ -64,12 +69,12 @@ const About = () => {
             <i className="ml-1 fas fa-palette"></i>
           </div>
           <div>
-            Somewhat addicted to
+            I'm gladly addicted to
             <strong> Gym Workouts</strong>{" "}
             <i className="ml-1 fas fa-dumbbell"></i>
           </div>
           <div>
-            Think about
+            I learn
             <strong> Philosophies</strong> for fun{" "}
             <i className="ml-1 fas fa-brain"></i>
           </div>
