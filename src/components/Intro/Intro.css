@@ -1,11 +1,29 @@
 .intro {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   position: relative;
+}
+
+.intro h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 13%;
+  font-size: 2.1rem;
+  color: grey;
+  font-weight: normal;
+}
+.intro p {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(156, 156, 156);
 }
 
 .profile_img {
   z-index: 2;
-  width: 23%;
+  width: 17%;
   border-radius: 100%;
   position: relative;
   left: 50%;
@@ -24,17 +42,42 @@
   background: rgba(255, 255, 255, 0.568);
   padding: 1rem;
   font-size: 1.3rem;
-  transition: 0.2s;
+  transition: 0.2s ease-in;
+  color: rgba(95, 95, 95, 0.61);
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 500px) {
   .profile_img {
-    width: 95px;
+    width: 90px;
+  }
+  .btn-project {
+    bottom: 60% !important;
+  }
+
+  .btn-about {
+    bottom: 60% !important;
+  }
+
+  .btn-skill {
+    top: 40% !important;
+  }
+  .btn-work {
+    top: 40% !important;
+  }
+  .profile_img {
+    top: 40%;
+  }
+  .hr-line {
+    top: 40% !important;
+  }
+  .vt-line {
+    top: 40% !important;
   }
 }
+
+/* 4 Buttons */
 .btn-project {
   border-radius: 100% 0 0 0;
-  color: rgba(95, 95, 95, 0.61);
   position: absolute;
   bottom: 50%;
   right: 50%;
@@ -42,7 +85,6 @@
 
 .btn-about {
   border-radius: 0 100% 0 0;
-  color: rgba(95, 95, 95, 0.61);
   position: absolute;
   bottom: 50%;
   left: 50%;
@@ -50,14 +92,12 @@
 
 .btn-skill {
   border-radius: 0 0 0 100%;
-  color: rgba(95, 95, 95, 0.61);
   position: absolute;
   top: 50%;
   right: 50%;
 }
 .btn-work {
   border-radius: 0 0 100% 0;
-  color: rgba(95, 95, 95, 0.61);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -78,7 +118,6 @@
 .vt-line {
   position: absolute;
   border-left: 1px solid rgba(119, 119, 119, 0.192);
-  height: 80%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);

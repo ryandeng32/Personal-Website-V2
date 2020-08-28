@@ -1,21 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import "./Intro.css";
 import profile_img from "../../img/profile_basketball.JPG";
 
 const Intro = ({ handleSetPage, num_projects }) => {
-  const [dimensions, setDimensions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-  });
-  const { height, width } = dimensions;
   let reset = {
     project_on: false,
     work_on: false,
     skill_on: false,
     about_on: false,
   };
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+  const [buttonWidth, setButtonWidth] = useState(0);
+  const [buttonHeight, setButtonHeight] = useState(0);
+  const [screenHeight, setScreenHeight] = useState(0);
   const [on, setOn] = useState({ ...reset, about_on: true });
+
   const { project_on, work_on, skill_on, about_on } = on;
+  const { height, width } = dimensions;
+
   useEffect(() => {
     const handleResize = () => {
       setDimensions({
@@ -28,23 +33,33 @@ const Intro = ({ handleSetPage, num_projects }) => {
       window.removeEventListener("resize", handleResize);
     };
   });
+
   const widthBorder = width > 500;
-  const num = 150 + width * 0.07;
+  const num = 115 + width * 0.07;
   const screen_height = 500 + width * 0.08;
   const height_style = widthBorder
     ? { width: `${num}px`, height: `${num}px` }
     : { width: width * 0.3, height: width * 0.3 };
 
+  const hr_width = widthBorder
+    ? {
+        width: `${num * 2.3}5px`,
+      }
+    : { width: "70%" };
+  const vt_height = widthBorder
+    ? {
+        height: `${num * 2.3}5px`,
+      }
+    : { height: "70%" };
+
   return (
     <section
-      style={
-        widthBorder ? { height: `${screen_height}px` } : { height: width * 0.9 }
-      }
+      style={widthBorder ? { height: `100vh` } : { height: width * 0.9 }}
       className="intro"
     >
       <img className="profile_img" src={profile_img} alt="" />
-      <div style={{ width: height * 0.7 }} className="hr-line"></div>
-      <div className="vt-line"></div>
+      <div style={hr_width} className="hr-line"></div>
+      <div style={vt_height} className="vt-line"></div>
       <div
         style={height_style}
         className={
@@ -113,6 +128,14 @@ const Intro = ({ handleSetPage, num_projects }) => {
           Work
         </div>
       </div>
+      {widthBorder ? (
+        <Fragment>
+          <h1>
+            I'm <strong>Ryan Deng</strong>
+          </h1>
+          <p>Welcome, I'm glad you are finally here.</p>
+        </Fragment>
+      ) : null}
     </section>
   );
 };

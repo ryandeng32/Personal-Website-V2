@@ -11,6 +11,10 @@ const App = () => {
   const [page, setPage] = useState("About");
   const handleSetPage = (e) => {
     setPage(e.target.getAttribute("name"));
+    window.scrollTo({
+      top: 100,
+      behavior: "smooth",
+    });
   };
   let currentPage;
   switch (page) {
