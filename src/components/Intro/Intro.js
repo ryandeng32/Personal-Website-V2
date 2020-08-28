@@ -54,7 +54,7 @@ const Intro = ({ handleSetPage, num_projects }) => {
 
   return (
     <section
-      style={widthBorder ? { height: `100vh` } : { height: width * 0.9 }}
+      style={widthBorder ? { height: height } : { height: width * 0.9 }}
       className="intro"
     >
       <img className="profile_img" src={profile_img} alt="" />
