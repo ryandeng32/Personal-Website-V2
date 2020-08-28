@@ -22,14 +22,14 @@ const Intro = ({ handleSetPage, num_projects }) => {
         className={
           about_on ? "intro-btn btn-about about_on on" : "intro-btn btn-about"
         }
-        name="About Me"
+        name="About"
         onClick={(e) => {
           handleSetPage(e);
           setOn({ reset, about_on: true });
         }}
       >
-        <i className="fas fa-user" name="About Me"></i>
-        <div className="intro-text" name="About Me">
+        <i className="fas fa-user" name="About"></i>
+        <div className="intro-text" name="About">
           About Me
         </div>
       </div>

@@ -15,10 +15,21 @@
   text-align: center;
 }
 .about-text p {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
 
 .about-text .about-text-lead {
   font-size: 1rem;
   text-align: center;
+}
+
+.about-list {
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-list i {
+  color: rgba(85, 85, 85, 0.596);
 }

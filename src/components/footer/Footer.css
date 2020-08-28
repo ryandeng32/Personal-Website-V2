@@ -1,0 +1,42 @@
+.footer {
+  margin-top: 2rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.footer-title {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.footer-links {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  gap: 10%;
+}
+
+.footer-links a {
+  color: rgb(255, 255, 255);
+}
+.footer p {
+  color: white;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+.color-About {
+  background: rgba(98, 186, 71, 1);
+}
+.color-Projects {
+  background: rgba(90, 20, 143, 1);
+}
+.color-Work {
+  background: rgba(7, 64, 222, 1);
+}
+.color-Skills {
+  background: rgba(233, 51, 82, 1);
+}

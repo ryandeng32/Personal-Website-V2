@@ -6,8 +6,9 @@ import Projects from "./components/projects/Projects";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Work from "./components/work/Work";
+import Footer from "./components/footer/Footer";
 const App = () => {
-  const [page, setPage] = useState("About Me");
+  const [page, setPage] = useState("About");
   const handleSetPage = (e) => {
     setPage(e.target.getAttribute("name"));
   };
@@ -16,7 +17,7 @@ const App = () => {
     case "Projects":
       currentPage = <Projects projects_data={projects_data} />;
       break;
-    case "About Me":
+    case "About":
       currentPage = <About />;
       break;
     case "Skills":
@@ -34,7 +35,8 @@ const App = () => {
         handleSetPage={handleSetPage}
         num_projects={projects_data.length}
       />
-      <div className="container"> {currentPage}</div>
+      <div className="container">{currentPage}</div>
+      <Footer color={page} />
     </Fragment>
   );
 };
