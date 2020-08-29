@@ -20,8 +20,30 @@
   text-align: center;
 }
 .work-text-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem;
   font-size: 0.9rem;
   margin-top: 0.5rem;
   line-height: 1.5rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .work-title {
+    font-size: 2rem;
+  }
+  .work-text-title {
+    font-size: 2.1rem;
+  }
+  .work-text-date {
+    font-size: 1.2rem;
+  }
+  .work-text-list {
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+  .work-text-list li {
+    width: 75%;
+  }
 }

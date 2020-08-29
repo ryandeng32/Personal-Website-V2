@@ -12,7 +12,7 @@ export const projects_data = [
     icon: "palette",
     name: "Challengers",
     description:
-      "A fullstack web app made with the MERN stack to facilitate employee engagement in remote environment",
+      "A  web app made with the MERN stack to facilitate employee engagement",
     website: "https://github.com/ryandeng32/Challengers",
     image: Challengers,
   },
@@ -56,7 +56,7 @@ export const projects_data = [
   },
   {
     icon: "gamepad",
-    name: "Impossible Platformer",
+    name: "Impossible Game",
     description: "A hard 2D platformer game made with Unity and C#.",
     website: "https://github.com/ryandeng32/Impossible-Platformer",
     image: Platformer,

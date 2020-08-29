@@ -17,10 +17,10 @@
 .project {
   border: 2px solid rgb(128, 128, 128);
   position: relative;
+  height: 230px;
   border-radius: 15px;
 }
 .icon {
-  transition: 0.2s ease-in;
   position: absolute;
   z-index: 3;
   font-size: 4rem;
@@ -31,7 +31,6 @@
 }
 
 .thumbnail {
-  transition: 0.2s ease-in;
   filter: blur(1px);
   position: relative;
   z-index: 2;
@@ -54,15 +53,15 @@
 }
 
 .project-description {
-  display: none;
+  display: block;
   color: #000000;
-  font-size: 18px;
+  font-size: 0.85rem;
 }
 
 .project-title {
   position: absolute;
   z-index: 3;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
   left: 50%;
   bottom: 10%;
@@ -70,19 +69,56 @@
   text-align: center;
   transform: translate(-50%, -10%);
 }
-/* .project:active .project-title,
-.project:hover .project-title {
-  transform: translate(-50%, -250%);
-} */
-/* .project:active .thumbnail,
-.project:hover .thumbnail {
-  height: 180px;
+.is-clicked .project-title {
+  position: absolute;
+  top: 40%;
+}
+.is-clicked .thumbnail {
+  height: 130px;
   border-radius: 15px 15px 0 0;
-  transform: translateY(0);
-} */
-/* .project:hover .icon,
-.project:active .icon {
-  font-size: 45px;
+}
+.is-clicked .icon {
+  font-size: 2rem;
   top: 15%;
-  transform: translate(-50%, -15%);
-} */
+}
+
+@media only screen and (min-width: 500px) {
+  .project-preview {
+    padding: 25px;
+  }
+  .project-description {
+    font-size: 1rem;
+  }
+  .project {
+    height: 300px;
+  }
+  .projects {
+    padding: 5rem;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 1.8rem;
+    grid-template-rows: 300px;
+  }
+
+  .icon {
+    font-size: 5rem;
+  }
+
+  .thumbnail {
+    height: 300px;
+  }
+
+  .project-title {
+    font-size: 1.7rem;
+  }
+  .is-clicked .project-title {
+    position: absolute;
+    top: 43%;
+  }
+  .is-clicked .thumbnail {
+    height: 170px;
+  }
+  .is-clicked .icon {
+    font-size: 2.5rem;
+    top: 17%;
+  }
+}

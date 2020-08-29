@@ -18,12 +18,14 @@
 .skills-list {
   padding: 0 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 5rem);
-  justify-content: space-around;
+  grid-template-columns: repeat(auto-fit, 4rem);
+  justify-content: space-evenly;
   gap: 1.5rem 1rem;
 }
 
 .skill-badge {
+  width: 5rem;
+  height: 5rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -34,20 +36,41 @@
   font-size: 3rem;
 }
 
+.skill-badge svg {
+  font-size: 3rem;
+}
 .skill-badge-name {
+  position: absolute;
+  bottom: 5%;
   font-size: 1rem;
   margin-top: 0.1rem;
   color: rgba(95, 95, 95, 0.897);
 }
-i.plus1 {
-  position: absolute;
-  font-size: 0.9rem;
-  top: 23%;
-  right: 15%;
-}
-i.plus2 {
-  position: absolute;
-  font-size: 0.9rem;
-  top: 23%;
-  right: 0%;
+
+@media only screen and (min-width: 500px) {
+  .skills-title {
+    font-size: 2rem;
+  }
+  .skill-title {
+    font-size: 2.1rem;
+    margin-bottom: 3rem;
+  }
+  .skill-badge {
+    height: 6rem;
+    width: 6rem;
+  }
+  .skill-badge i {
+    font-size: 4rem;
+  }
+  .skill-badge-name {
+    font-size: 1.2rem;
+  }
+  .skill-badge svg {
+    font-size: 4rem;
+  }
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, 8rem);
+    justify-content: space-evenly;
+    gap: 1.5rem 1rem;
+  }
 }

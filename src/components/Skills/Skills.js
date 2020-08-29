@@ -13,7 +13,6 @@ const Skills = () => {
             className="iconify"
             data-icon="logos:python"
             data-inline="false"
-            style={{ fontSize: "3rem" }}
           ></span>{" "}
           <div className="skill-badge-name">Python</div>
         </div>
@@ -38,7 +37,7 @@ const Skills = () => {
             className="iconify"
             data-icon="file-icons:c"
             data-inline="false"
-            style={{ fontSize: "3rem", color: "#6295CB" }}
+            style={{ color: "#6295CB" }}
           ></span>
           <div className="skill-badge-name">C++</div>
         </div>
@@ -52,18 +51,17 @@ const Skills = () => {
             className="iconify"
             data-icon="logos:nodejs-icon"
             data-inline="false"
-            style={{ fontSize: "3rem" }}
           ></span>
           <div className="skill-badge-name">Node.js</div>
         </div>
-        <div className="skill-badge">
+        <div className="skill-badge express">
           <span
             className="iconify"
             data-icon="logos:express"
             data-inline="false"
             style={{
               fontSize: "1.5rem",
-              padding: "0.75rem",
+              paddingTop: "2rem",
             }}
           ></span>
           <div className="skill-badge-name">Express.js</div>
@@ -73,7 +71,6 @@ const Skills = () => {
             className="iconify"
             data-icon="logos:react"
             data-inline="false"
-            style={{ fontSize: "3rem" }}
           ></span>
           <div className="skill-badge-name">React.js</div>
         </div>
@@ -82,7 +79,6 @@ const Skills = () => {
             className="iconify"
             data-icon="logos:redux"
             data-inline="false"
-            style={{ fontSize: "3rem" }}
           ></span>
           <div className="skill-badge-name">Redux.js</div>
         </div>
@@ -100,7 +96,6 @@ const Skills = () => {
             className="iconify"
             data-icon="cib:socket-io"
             data-inline="false"
-            style={{ fontSize: "3rem" }}
           ></span>{" "}
           <div className="skill-badge-name">Socket.io</div>
         </div>
@@ -115,7 +110,6 @@ const Skills = () => {
             className="iconify"
             data-icon="logos:git-icon"
             data-inline="false"
-            style={{ fontSize: "3rem" }}
           ></span>
           <div className="skill-badge-name">Git</div>
         </div>
@@ -124,7 +118,6 @@ const Skills = () => {
             className="iconify"
             data-icon="flat-color-icons:linux"
             data-inline="false"
-            style={{ fontSize: "3rem" }}
           ></span>
           <div className="skill-badge-name">Linux</div>
         </div>

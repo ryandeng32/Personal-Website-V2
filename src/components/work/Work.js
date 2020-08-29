@@ -8,7 +8,7 @@ const Work = () => {
         <div className="work-text-title">Co-founder at Refinest</div>
         <div className="work-text-date">2020.05 - 2020.08</div>
 
-        <ul className="work-text-list">
+        <div className="work-text-list">
           <li>
             Worked in a team of two autonomously thoughout the work term
             following the <strong>Agile workflow</strong>
@@ -27,7 +27,7 @@ const Work = () => {
             </strong>
             .
           </li>
-        </ul>
+        </div>
       </div>
     </section>
   );
