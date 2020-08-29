@@ -74,6 +74,12 @@ const Intro = ({ handleAbout, handleSetPage, num_projects }) => {
         onClick={(e) => {
           handleSetPage(e);
           setOn({ reset, about_on: true });
+          if (widthBorder) {
+            window.scroll({
+              top: height - 10,
+              behavior: "smooth",
+            });
+          }
         }}
       >
         <i className="fas fa-user" name="About"></i>
@@ -92,6 +98,12 @@ const Intro = ({ handleAbout, handleSetPage, num_projects }) => {
         onClick={(e) => {
           handleSetPage(e);
           setOn({ reset, project_on: true });
+          if (widthBorder) {
+            window.scroll({
+              top: height - 10,
+              behavior: "smooth",
+            });
+          }
         }}
       >
         <i className="fas fa-project-diagram" name="Projects"></i>
@@ -109,6 +121,12 @@ const Intro = ({ handleAbout, handleSetPage, num_projects }) => {
         onClick={(e) => {
           handleSetPage(e);
           setOn({ reset, skill_on: true });
+          if (widthBorder) {
+            window.scroll({
+              top: height - 10,
+              behavior: "smooth",
+            });
+          }
         }}
       >
         <i className="fas fa-tools" name="Skills"></i>
@@ -126,6 +144,12 @@ const Intro = ({ handleAbout, handleSetPage, num_projects }) => {
         onClick={(e) => {
           handleSetPage(e);
           setOn({ reset, work_on: true });
+          if (widthBorder) {
+            window.scroll({
+              top: height - 10,
+              behavior: "smooth",
+            });
+          }
         }}
       >
         <i className="fas fa-briefcase" name="Work"></i>
@@ -139,15 +163,6 @@ const Intro = ({ handleAbout, handleSetPage, num_projects }) => {
             I'm <strong>Ryan Deng</strong>
           </h1>
           <p>Welcome, I'm glad you are here.</p>
-          <i
-            onClick={() => {
-              window.scroll({
-                top: height - 10,
-                behavior: "smooth",
-              });
-            }}
-            className="scroll-down fas fa-angle-double-down"
-          ></i>
         </Fragment>
       ) : null}
     </section>
