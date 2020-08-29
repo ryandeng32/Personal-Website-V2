@@ -2,7 +2,7 @@
   "name": "personal-website-v2-master",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ryandeng32.github.io/Personal-Website-V2",
+  "homepage": "https://ryandeng.me/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
