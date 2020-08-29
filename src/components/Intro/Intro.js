@@ -13,9 +13,6 @@ const Intro = ({ handleAbout, handleSetPage, num_projects }) => {
     height: window.innerHeight,
     width: window.innerWidth,
   });
-  const [buttonWidth, setButtonWidth] = useState(0);
-  const [buttonHeight, setButtonHeight] = useState(0);
-  const [screenHeight, setScreenHeight] = useState(0);
   const [on, setOn] = useState({ ...reset, about_on: true });
 
   const { project_on, work_on, skill_on, about_on } = on;
@@ -41,7 +38,6 @@ const Intro = ({ handleAbout, handleSetPage, num_projects }) => {
     handleAbout(true);
   }
   const num = 115 + width * 0.07;
-  const screen_height = 500 + width * 0.08;
   const height_style = widthBorder
     ? { width: `${num}px`, height: `${num}px` }
     : { width: width * 0.3, height: width * 0.3 };

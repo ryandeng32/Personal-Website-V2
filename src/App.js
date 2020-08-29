@@ -41,7 +41,7 @@ const App = () => {
         handleAbout={handleAbout}
         num_projects={projects_data.length}
       />
-      <div className="container">{currentPage}</div>
+      <div>{currentPage}</div>
       <Footer color={page} />
     </Fragment>
   );

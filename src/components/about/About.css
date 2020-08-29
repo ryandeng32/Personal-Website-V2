@@ -1,34 +1,28 @@
 .about-title {
-  font-size: 1.7rem;
-  font-weight: bold;
   color: rgba(98, 186, 71, 1);
 }
 
 .about-text {
-  margin-top: 2rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
   line-height: 1.4rem;
   display: flex;
   flex-direction: column;
 }
 
 .about-text-title {
-  font-size: 1.3rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   color: grey;
-  margin-bottom: 1rem;
 }
 .about-text-lead {
   color: rgb(156, 156, 156);
-  font-size: 1rem;
-  text-align: center;
-}
-.about-text p {
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .about-list {
-  font-size: 0.85rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,26 +32,26 @@
   color: rgba(85, 85, 85, 0.596);
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .about-title {
-    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding-top: 2rem;
+    font-size: 2.1rem;
   }
   .about-text {
+    width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    text-align: center;
     align-items: center;
   }
   .about-text p {
-    width: 70%;
-    font-size: 1.3rem;
-    line-height: 2rem;
-  }
-  .about-list {
-    font-size: 1.3rem;
-    line-height: 2rem;
-  }
-  .about-text-title {
-    font-size: 2.1rem;
-  }
-  .about-text-lead {
-    font-size: 1.2rem;
+    width: 80%;
   }
 }
