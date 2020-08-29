@@ -189,3 +189,12 @@
   left: 35%;
   top: 35%;
 }
+
+.scroll-down {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, 0);
+  color: rgb(0, 0, 0);
+}

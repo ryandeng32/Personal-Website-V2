@@ -139,6 +139,15 @@ const Intro = ({ handleAbout, handleSetPage, num_projects }) => {
             I'm <strong>Ryan Deng</strong>
           </h1>
           <p>Welcome, I'm glad you are here.</p>
+          <i
+            onClick={() => {
+              window.scroll({
+                top: height - 10,
+                behavior: "smooth",
+              });
+            }}
+            className="scroll-down fas fa-angle-double-down"
+          ></i>
         </Fragment>
       ) : null}
     </section>
