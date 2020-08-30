@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d343154162e4ddf8c2ff591e762c9907",
+    "revision": "0cc736ab5083af56531f296160341984",
     "url": "/index.html"
   },
   {
-    "revision": "af44681bf05453d04b87",
-    "url": "/static/css/main.857b76f5.chunk.css"
+    "revision": "071692c485c4e80db990",
+    "url": "/static/css/main.9b541cd4.chunk.css"
   },
   {
-    "revision": "361eb3c27fc4f43cec47",
-    "url": "/static/js/2.3505b71f.chunk.js"
+    "revision": "935761042e79dc0e0b5a",
+    "url": "/static/js/2.17977d9f.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/static/js/2.3505b71f.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.17977d9f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "af44681bf05453d04b87",
-    "url": "/static/js/main.1c907369.chunk.js"
+    "revision": "071692c485c4e80db990",
+    "url": "/static/js/main.2eacc868.chunk.js"
   },
   {
     "revision": "1068c4cecc514b170539",
     "url": "/static/js/runtime-main.0baf3670.js"
+  },
+  {
+    "revision": "b16bedee53130c9199efe124c52f902f",
+    "url": "/static/media/Ryan_Deng_Resume.b16bedee.pdf"
   },
   {
     "revision": "89ec80f64c3633bd7ca5d919bef349eb",
