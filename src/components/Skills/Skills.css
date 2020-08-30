@@ -1,6 +1,4 @@
 .skills-title {
-  font-size: 1.7rem;
-  font-weight: bold;
   color: rgba(233, 51, 82, 1);
 }
 
@@ -16,15 +14,15 @@
 }
 
 .skills-list {
-  padding: 0 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 4rem);
-  justify-content: space-evenly;
-  gap: 1.5rem 1rem;
+  grid-template-columns: repeat(auto-fit, 3.7rem);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
 }
 
 .skill-badge {
-  width: 5rem;
   height: 5rem;
   position: relative;
   display: flex;
@@ -47,30 +45,35 @@
   color: rgba(95, 95, 95, 0.897);
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
   .skills-title {
-    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
   }
   .skill-title {
-    font-size: 2.1rem;
-    margin-bottom: 3rem;
+    text-align: left;
+    font-size: 1.7rem;
   }
   .skill-badge {
     height: 6rem;
-    width: 6rem;
   }
+  .skill-badge svg,
   .skill-badge i {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
   .skill-badge-name {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
-  .skill-badge svg {
-    font-size: 4rem;
-  }
+
   .skills-list {
-    grid-template-columns: repeat(auto-fit, 8rem);
-    justify-content: space-evenly;
-    gap: 1.5rem 1rem;
+    width: 600px;
+    margin-bottom: 3rem;
+  }
+  .skills-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

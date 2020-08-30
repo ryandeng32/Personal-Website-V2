@@ -32,30 +32,35 @@ const Intro = ({ handleAbout, handleSetPage, num_projects }) => {
   });
 
   const widthBorder = width > 500;
-  if (widthBorder) {
-    handleAbout(false);
-  } else {
-    handleAbout(true);
-  }
-  const num = 115 + width * 0.07;
-  const height_style = widthBorder
-    ? { width: `${num}px`, height: `${num}px` }
-    : { width: width * 0.3, height: width * 0.3 };
+  useEffect(() => {
+    if (widthBorder) {
+      handleAbout(false);
+    } else {
+      handleAbout(true);
+    }
+  });
+
+  const num = widthBorder ? 115 + width * 0.04 : width * 0.3;
+  const height_style = { width: `${num}px`, height: `${num}px` };
 
   const hr_width = widthBorder
     ? {
-        width: `${num * 2.3}5px`,
+        width: `${num * 2.3}px`,
       }
     : { width: "70%" };
   const vt_height = widthBorder
     ? {
-        height: `${num * 2.3}5px`,
+        height: `${num * 2.3}px`,
       }
     : { height: "70%" };
 
   return (
     <section
-      style={widthBorder ? { height: height } : { height: width * 0.9 }}
+      style={
+        widthBorder
+          ? { height: Math.max(height, 550) }
+          : { height: width * 0.9 }
+      }
       className="intro"
     >
       <img className="profile_img" src={profile_img} alt="" />

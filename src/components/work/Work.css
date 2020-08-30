@@ -13,7 +13,7 @@
 
 .work-text-title {
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
 }
@@ -23,6 +23,7 @@
   color: grey;
   text-align: center;
 }
+
 .work-text-list {
   display: flex;
   flex-direction: column;
