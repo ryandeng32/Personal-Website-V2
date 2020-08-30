@@ -12,7 +12,7 @@ export const projects_data = [
     icon: "palette",
     name: "Challengers",
     description:
-      "A  web app made with the MERN stack to facilitate employee engagement",
+      "A web app made with the MERN stack to facilitate employee engagement",
     website: "https://github.com/ryandeng32/Challengers",
     image: Challengers,
   },
@@ -20,17 +20,11 @@ export const projects_data = [
     icon: "lightbulb",
     name: "IdeaConnect",
     description:
-      "Real-time Chatrooms to connect ideas built with MERN stack and socket.io",
+      "Real-time chatrooms to connect ideas built with MERN stack and socket.io",
     website: "https://github.com/ryandeng32/IdeaConnect",
     image: IdeaConnect,
   },
-  {
-    icon: "clipboard",
-    name: "ProjectBoard",
-    description: "A minimalist approach to SCRUM board as a chrome extension",
-    website: "https://github.com/ryandeng32/ProjectBoard",
-    image: ProjectBoard,
-  },
+
   {
     icon: "piggy-bank",
     name: "ShopSmart",
@@ -53,6 +47,13 @@ export const projects_data = [
     description: "A remake of the classic game Pong in 3D with VPython.",
     website: "https://github.com/ryandeng32/3D_Pong",
     image: Pong,
+  },
+  {
+    icon: "clipboard",
+    name: "ProjectBoard",
+    description: "A minimalist approach to SCRUM board as a chrome extension",
+    website: "https://github.com/ryandeng32/ProjectBoard",
+    image: ProjectBoard,
   },
   {
     icon: "gamepad",

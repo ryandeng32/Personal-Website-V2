@@ -12,12 +12,13 @@ const Work = () => {
           <div className="work-text-list">
             <li>
               Completed in-depth training in <strong>entrepreneurship</strong>{" "}
-              and <strong>problem analysis</strong>.
+              and <strong>problem analysis</strong> at the{" "}
+              <strong>Conrad School of Entrepreneurship and Business</strong>.
             </li>
             <br />
             <li>
-              Worked in a team of two autonomously thoughout the work term
-              following the <strong>Agile workflow</strong>
+              Worked in a team of two <strong>autonomously</strong> thoughout
+              the work term following the <strong>Agile workflow</strong>
             </li>
             <br />
             <li>

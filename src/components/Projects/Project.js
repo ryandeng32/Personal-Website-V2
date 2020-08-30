@@ -16,7 +16,12 @@ const Project = ({ project }) => {
         <img className="thumbnail" alt="thumbnail" src={image} />
         <div className="project-preview">
           <p className="project-description">{description}</p>
-          <a href={website} target="_blank" rel="noopener noreferrer">
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-button"
+          >
             Read More
           </a>
         </div>

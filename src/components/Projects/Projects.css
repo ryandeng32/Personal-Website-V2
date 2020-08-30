@@ -1,15 +1,19 @@
 .projects-title {
-  font-size: 1.7rem;
-  font-weight: bold;
   color: rgba(90, 20, 143, 1);
 }
 
+.projects-hint {
+  color: rgba(90, 20, 143, 0.473);
+  font-size: 1rem;
+  margin-top: 0;
+  padding: 0;
+}
 .projects {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 230px);
+  grid-template-columns: repeat(auto-fit, 13rem);
   gap: 1.8rem;
-  grid-template-rows: 230px;
+  grid-template-rows: 12rem;
   justify-content: center;
   padding-bottom: 50px;
 }
@@ -17,13 +21,13 @@
 .project {
   border: 2px solid rgb(128, 128, 128);
   position: relative;
-  height: 230px;
+  height: 12rem;
   border-radius: 15px;
 }
 .icon {
   position: absolute;
   z-index: 3;
-  font-size: 4rem;
+  font-size: 3.3rem;
   color: white;
   top: 50%;
   left: 50%;
@@ -37,85 +41,105 @@
   border-radius: 15px;
   display: block;
   width: 100%;
-  height: 230px;
+  height: 12rem;
   object-fit: cover;
 }
 
 .project-preview {
   position: absolute;
-  border-top: 2px solid var(--borderColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   left: 0px;
   right: 0px;
   bottom: 0px;
+  padding: 1rem 1rem 1rem 1rem;
   border-radius: 0 0 15px 15px;
   background-color: rgb(243, 243, 243);
-  padding: 10px;
 }
 
 .project-description {
-  display: block;
   color: #000000;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
+.project-button {
+  width: 100%;
+  font-size: 0.9rem;
+  position: relative;
+}
 .project-title {
   position: absolute;
   z-index: 3;
   font-size: 1.2rem;
   color: white;
   left: 50%;
-  bottom: 10%;
+  bottom: 15%;
   width: 100%;
   text-align: center;
-  transform: translate(-50%, -10%);
+  transform: translate(-50%, 0);
 }
 .is-clicked .project-title {
   position: absolute;
-  top: 40%;
+  top: 30%;
 }
 .is-clicked .thumbnail {
-  height: 130px;
+  height: 6rem;
   border-radius: 15px 15px 0 0;
 }
 .is-clicked .icon {
-  font-size: 2rem;
+  font-size: 1.5rem;
   top: 15%;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 550px) {
+  .projects-hint {
+    text-align: center;
+    margin: 0;
+    margin-top: 0.5rem;
+  }
   .project-preview {
-    padding: 25px;
+    height: 5rem;
+    padding: 1rem 1rem 0.5rem 1rem;
   }
   .project-description {
     font-size: 1rem;
   }
+  .project-button {
+    font-size: 1rem;
+  }
   .project {
-    height: 300px;
+    height: 16rem;
   }
   .projects {
-    padding: 5rem;
-    grid-template-columns: repeat(auto-fit, 300px);
-    gap: 1.8rem;
-    grid-template-rows: 300px;
+    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fit, 18rem);
+    gap: 3rem;
+    grid-template-rows: 16rem;
   }
 
   .icon {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .thumbnail {
-    height: 300px;
+    height: 16rem;
   }
-
+  .projects-title {
+    text-align: center;
+    margin: 0;
+    font-size: 2.1rem;
+  }
   .project-title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .is-clicked .project-title {
     position: absolute;
     top: 43%;
   }
   .is-clicked .thumbnail {
-    height: 170px;
+    height: 10rem;
   }
   .is-clicked .icon {
     font-size: 2.5rem;

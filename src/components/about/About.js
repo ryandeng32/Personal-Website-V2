@@ -79,7 +79,7 @@ const About = ({ displayIntro }) => {
             <div>
               {" "}
               I like to do
-              <strong> Digital Painting</strong>{" "}
+              <strong> Digital Paintings</strong>{" "}
               <i className="ml-1 fas fa-palette"></i>
             </div>
             <div>
