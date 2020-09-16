@@ -3,3 +3,6 @@
 
 ### Website
 > Check out my website [here](http://ryandeng.me)
+
+### Todos 
+> Make the cursor change above the project images 
