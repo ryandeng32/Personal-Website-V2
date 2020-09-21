@@ -7,5 +7,8 @@
 ### Todos 
 > Make the cursor change above the project images 
 
+> Detailed file structure layout 
+
+
 ### Test
 > Testing out working with codespace
