@@ -6,44 +6,51 @@ const Work = () => {
       <div className="work-title section-title">Work</div>
       <div className="container">
         <div className="work-text">
-          <div className="work-text-title">Co-founder at Refinest</div>
+          <div className="work-text-title">Web Application Developer @ UWaterloo</div>
+          <div className="work-text-date">2021.01 - 2021.04</div>
+
+          <div className="work-text-list">
+            <li>
+              Ideated and developed a <strong>Python</strong> program 
+              that fixes invalid documentation format across <strong>290+</strong> scripts, 
+              drastically improving workflow efficiency by automating what was once a manual process. 
+            </li>
+            <br />
+            <li>
+              Designed a new schema for a <strong>PostgreSQL</strong> database that allocates 
+              resources for <strong>7000+</strong> clients to improve query efficiency and the 
+              maintainability of clients’ data
+            </li>
+            <br />
+            <li>
+              Constructed SQL queries to migrate <strong>650K+</strong> user records from the old 
+              schema and validate the imported data.
+            </li>
+            <br />
+            <li>
+              Built <strong>Bash</strong> scripts to set up virtual environments in <strong>Vagrant</strong> for developing with <strong>Python</strong>, 
+              <strong>PostgreSQL</strong>, and <strong>Apache</strong>.
+            </li>
+          </div>
+        </div>
+
+        <div className="work-text">
+          <div className="work-text-title">Entrepreneur Fellowship @ Conrad School</div>
           <div className="work-text-date">2020.05 - 2020.08</div>
 
           <div className="work-text-list">
             <li>
-              Completed <strong>4 months</strong> of fast-paced training focused
-              on
-              <strong>entrepreneurship</strong> and{" "}
-              <strong>problem analysis</strong> at the Conrad School of
-              Entrepreneurship and Business (Conrad).
+              Awarded <strong>top 6 out of 42 teams</strong> in the Quantum Valley Invt. Problem Pitch Competition pitching on collaborative ideation.
             </li>
             <br />
             <li>
-              Awarded <strong>top 6 finalist status out of 42 teams</strong> in
-              the Quantum Valley Investments Problem Pitch Competition by
-              scripting and designing the pitch deck, demonstrating the future
-              of technology’s role in enhancing creativity.
+              Developed Challengers, an event hosting platform with <strong>React, Redux, Node/Express</strong> to facilitate employee engagement.
             </li>
             <br />
             <li>
-              Researched the psychology behind creativity and developed concepts
-              of using technologies to generate creativity{" "}
-              <strong>in partnership with the Problem Lab</strong> at University
-              of Waterloo.
+              Designed the security system of Challengers by encrypting passwords with <strong>Bcrypt</strong>, storing data to <strong>MongoDB</strong> Cloud, and leveraging <strong>JSON Web Token</strong> to authorize users over HTTP requests. 
             </li>
             <br />
-            <li>
-              <strong>Led a team of two</strong> following the{" "}
-              <strong>agile methodology</strong>, had daily scrum meetings,
-              interviewed 15 industry experts, and completed 3 design sprints.
-            </li>
-            <br />
-            <li>
-              Dived in <strong>startup-building</strong> by communicating with 6
-              other venture teams, competing in 3 funding competitions, and
-              finishing weekly workshops/deliverables with Conrad mentors and
-              campus coaches.
-            </li>
           </div>
         </div>
       </div>
