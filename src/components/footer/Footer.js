@@ -26,7 +26,7 @@ const Footer = ({ color }) => {
           <i className="fas fa-envelope"></i>
         </a>
       </div>
-      <p className="copyright">© 2020 Ryan Deng</p>
+      <p className="copyright">© 2021 Ryan Deng</p>
     </section>
   );
 };
