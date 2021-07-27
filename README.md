@@ -10,5 +10,3 @@
 > Detailed file structure layout 
 
 
-### Test
-> Testing out working with codespace
