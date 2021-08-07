@@ -9,4 +9,5 @@
 
 > Detailed file structure layout 
 
-
+> Add section for frontend portfolio (e.g. codepen)
+> 
