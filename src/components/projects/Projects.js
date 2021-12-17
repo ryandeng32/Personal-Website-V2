@@ -1,6 +1,6 @@
-import React from "react";
-import Project from "./Project";
-import "./Projects.css";
+import React from 'react'
+import Project from './Project'
+import './Projects.css'
 const Projects = ({ projects_data }) => {
   return (
     <section className="projects-section">
@@ -18,7 +18,7 @@ const Projects = ({ projects_data }) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

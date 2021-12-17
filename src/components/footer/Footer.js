@@ -1,5 +1,5 @@
-import React from "react";
-import "./Footer.css";
+import React from 'react'
+import './Footer.css'
 const Footer = ({ color }) => {
   return (
     <section className={`footer color-${color}`}>
@@ -28,6 +28,6 @@ const Footer = ({ color }) => {
       </div>
       <p className="copyright">© 2021 Ryan Deng</p>
     </section>
-  );
-};
-export default Footer;
+  )
+}
+export default Footer

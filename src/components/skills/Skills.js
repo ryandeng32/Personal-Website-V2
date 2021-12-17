@@ -1,5 +1,5 @@
-import React from "react";
-import "./Skills.css";
+import React from 'react'
+import './Skills.css'
 const Skills = () => {
   return (
     <section className="skills">
@@ -15,23 +15,23 @@ const Skills = () => {
                 className="iconify"
                 data-icon="logos:python"
                 data-inline="false"
-              ></span>{" "}
+              ></span>{' '}
               <div className="skill-badge-name">Python</div>
             </div>
             <div className="skill-badge">
-              <i style={{ color: "#EFD81D" }} className="fab fa-js"></i>
+              <i style={{ color: '#EFD81D' }} className="fab fa-js"></i>
               <div className="skill-badge-name">JavaScript</div>
             </div>
             <div className="skill-badge">
-              <i style={{ color: "#D74A21" }} className="fab fa-html5"></i>
+              <i style={{ color: '#D74A21' }} className="fab fa-html5"></i>
               <div className="skill-badge-name">HTML 5</div>
             </div>
             <div className="skill-badge">
-              <i style={{ color: "#254BDD" }} className="fab fa-css3-alt"></i>
+              <i style={{ color: '#254BDD' }} className="fab fa-css3-alt"></i>
               <div className="skill-badge-name">CSS 3</div>
             </div>
             <div className="skill-badge">
-              <i style={{ color: "#5968BA" }} className="fab fa-cuttlefish"></i>
+              <i style={{ color: '#5968BA' }} className="fab fa-cuttlefish"></i>
               <div className="skill-badge-name">C</div>
             </div>
             <div className="skill-badge">
@@ -39,7 +39,7 @@ const Skills = () => {
                 className="iconify"
                 data-icon="file-icons:c"
                 data-inline="false"
-                style={{ color: "#6295CB" }}
+                style={{ color: '#6295CB' }}
               ></span>
               <div className="skill-badge-name">C++</div>
             </div>
@@ -62,8 +62,8 @@ const Skills = () => {
                 data-icon="logos:express"
                 data-inline="false"
                 style={{
-                  fontSize: "1.5rem",
-                  paddingTop: "2rem",
+                  fontSize: '1.5rem',
+                  paddingTop: '2rem',
                 }}
               ></span>
               <div className="skill-badge-name">Express.js</div>
@@ -89,8 +89,8 @@ const Skills = () => {
                 className="iconify"
                 data-icon="cib:mongodb"
                 data-inline="false"
-                style={{ fontSize: "3rem", color: "#78C47C" }}
-              ></span>{" "}
+                style={{ fontSize: '3rem', color: '#78C47C' }}
+              ></span>{' '}
               <div className="skill-badge-name">MongoDB</div>
             </div>
             <div className="skill-badge">
@@ -98,7 +98,7 @@ const Skills = () => {
                 className="iconify"
                 data-icon="cib:socket-io"
                 data-inline="false"
-              ></span>{" "}
+              ></span>{' '}
               <div className="skill-badge-name">Socket.io</div>
             </div>
           </div>
@@ -126,6 +126,6 @@ const Skills = () => {
         </div>
       </div>
     </section>
-  );
-};
-export default Skills;
+  )
+}
+export default Skills
