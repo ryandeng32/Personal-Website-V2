@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import './About.css'
-import Resume from '../../data/Ryan_Deng_Resume.pdf'
+
 const About = ({ displayIntro }) => {
   return (
     <section className="about">
@@ -21,8 +21,8 @@ const About = ({ displayIntro }) => {
           <p>
             I am a sophomore studying <strong>Software Engineering</strong> at
             the
-            <strong> University of Waterloo.</strong>{' '}
-            <a href={Resume}>Check out my resume</a>
+            <strong> University of Waterloo</strong>{' '}
+            <a href={"https://se-webring.xyz/"}>(se-webring)</a>
           </p>
           <br />
           <p>
