@@ -19,16 +19,16 @@ const About = ({ displayIntro }) => {
           ) : null}
           <br />
           <p>
-            I am a sophomore studying <strong>Software Engineering</strong> at
+            I am a student majoring in <strong>Software Engineering</strong> at
             the
             <strong> University of Waterloo</strong>{' '}
-            <a href={"https://se-webring.xyz/"}>(se-webring)</a>
+            <a href={'https://se-webring.xyz/'}>(se-webring)</a>
           </p>
           <br />
           <p>
             <strong>Learning is my greatest passion</strong>, I consider myself
             a self starter and I'm naturally inquisitive, I was drawn to coding
-            when I first started 3 years ago, and I've been in{' '}
+            when I first started, and I've been in{' '}
             <i
               style={{ color: 'rgba(234, 53, 117, 1)' }}
               className="fas fa-heart"

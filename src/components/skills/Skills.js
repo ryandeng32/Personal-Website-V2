@@ -23,6 +23,15 @@ const Skills = () => {
               <div className="skill-badge-name">JavaScript</div>
             </div>
             <div className="skill-badge">
+              <span
+                className="iconify"
+                data-icon="file-icons:typescript"
+                data-inline="false"
+                style={{ color: '#6295CB' }}
+              ></span>
+              <div className="skill-badge-name">TypeScript</div>
+            </div>
+            <div className="skill-badge">
               <i style={{ color: '#D74A21' }} className="fab fa-html5"></i>
               <div className="skill-badge-name">HTML 5</div>
             </div>
@@ -42,6 +51,10 @@ const Skills = () => {
                 style={{ color: '#6295CB' }}
               ></span>
               <div className="skill-badge-name">C++</div>
+            </div>
+            <div className="skill-badge">
+              <i style={{ color: '#5968BA' }} className="fab fa-java"></i>
+              <div className="skill-badge-name">Java</div>
             </div>
           </div>
           <p className="skill-title">
